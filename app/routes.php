@@ -21,4 +21,18 @@ return function (App $app) {
 
         return $renderer->render($response, 'brewing.php');
     })->setName('brewing');
+
+    $app->get('/grinding', function (Request $request, Response $response, $args) {
+        $renderer = new PhpRenderer(__DIR__ . '/../templates', ['title' => 'Coffee Grinding']);
+        $renderer->setLayout('layout.php');
+
+        return $renderer->render($response, 'grinding.php');
+    })->setName('grinding');
+
+    $app->get('/roasting', function (Request $request, Response $response, $args) {
+        $renderer = new PhpRenderer(__DIR__ . '/../templates', ['title' => 'Coffee Roasting']);
+        $renderer->setLayout('layout.php');
+
+        return $renderer->render($response, 'roasting.php');
+    })->setName('roasting');
 };
