@@ -44,9 +44,12 @@ return function (App $app) {
     })->setName('survey');
 
     $app->post('/survey', function (Request $request, Response $response, array $args) {
-        var_dump($request);
+        $formData = $request->getParsedBody();
+        
+        //TODO: write the form data to a log file or send it via email
+        var_dump($formData);
 
-        die('Form submitted');
+        return $response->getBody()->write('Form submitted');
     });
 
     $app->get('/drinks', function (Request $request, Response $response, array $args) {

@@ -4,7 +4,7 @@
 		<img src="/assets/images/espresso.jpg" alt="a cup of espresso"/>
 	</figure>
 </aside>
-<form action="/survey.php" method="post">
+<form action="/survey" method="post">
 	<fieldset>
 		<legend>Personal Information</legend>
 		Your Name<br/>
