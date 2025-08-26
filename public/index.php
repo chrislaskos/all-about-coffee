@@ -16,4 +16,11 @@ $app->get('/', function (Request $request, Response $response, $args) {
     return $renderer->render($response, 'home.php');
 })->setName('home');
 
+$app->get('/brewing', function (Request $request, Response $response, $args) {
+    $renderer = new PhpRenderer(__DIR__ . '/../templates', ['title' => 'Coffee Brewing']);
+    $renderer->setLayout('layout.php');
+
+    return $renderer->render($response, 'brewing.php');
+})->setName('brewing');
+
 $app->run();

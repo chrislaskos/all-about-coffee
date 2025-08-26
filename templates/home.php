@@ -9,8 +9,8 @@
 	<p>Coffee preparation is the process of turning coffee beans into a beverage.
 	While the particular steps vary with the type of coffee and with the raw 
 	materials, the process includes four basic steps; raw coffee beans must be
-	<a href="roasting.html">roasted</a>, the roasted coffee beans must then be <a href="grinding.html">ground</a>, the ground coffee
-	must then be mixed with hot water for a certain time (<a href="brewing.html">brewed</a>), and finally
+	<a href="/roasting">roasted</a>, the roasted coffee beans must then be <a href="/grinding">ground</a>, the ground coffee
+	must then be mixed with hot water for a certain time (<a href="/brewing">brewed</a>), and finally
 	the liquid coffee must be separated from the used grounds.</p>
 
 	<p>Coffee is usually brewed immediately before drinking. In most areas, coffee
