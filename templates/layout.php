@@ -10,29 +10,11 @@
 	<body>
         <header>
             <h1>All About Coffee</h1>
-			<nav>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="roasting.html">Roasting</a></li>
-					<li><a href="grinding.html">Grinding</a></li>
-					<li><a href="brewing.html">Brewing</a></li>
-					<li><a href="drinks.html">Drinks</a></li>
-					<li><a href="survey.html">Coffe Survey</a></li>
-				</ul>
-			</nav>
+            <?=$this->fetch('navbar.phtml')?>
 		</header>
         <?=$content?>
         <footer>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="roasting.html">Roasting</a></li>
-                    <li><a href="grinding.html">Grinding</a></li>
-                    <li><a href="brewing.html">Brewing</a></li>
-                    <li><a href="drinks.html">Drinks</a></li>
-                    <li><a href="survey.html">Coffe Survey</a></li>
-                </ul>
-            </nav>
+            <?=$this->fetch('navbar.phtml')?>
 		</footer>
 	</body>
 </html>
