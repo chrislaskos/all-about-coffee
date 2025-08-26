@@ -43,6 +43,12 @@ return function (App $app) {
         return $renderer->render($response, 'survey.php');
     })->setName('survey');
 
+    $app->post('/survey', function (Request $request, Response $response, array $args) {
+        var_dump($request);
+
+        die('Form submitted');
+    });
+
     $app->get('/drinks', function (Request $request, Response $response, array $args) {
         $renderer = new PhpRenderer(__DIR__ . '/../templates', ['title' => 'Coffee Drinks']);
         $renderer->setLayout('layout.php');

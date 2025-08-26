@@ -37,4 +37,5 @@
 		<option value="flavored">flavored</option>
 		</select>
 	</fieldset>
+	<input type="submit" value="Submit Survey"/>
 </form>
